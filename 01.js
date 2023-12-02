@@ -42,18 +42,18 @@ const firstAndLastDigits = (str, includeWords) => {
   return parseInt(first + last);
 };
 
-assert.deepEqual(firstAndLastDigits("1abc2"), 12);
-assert.deepEqual(firstAndLastDigits("pqr3stu8vwx"), 38);
-assert.deepEqual(firstAndLastDigits("a1b2c3d4e5f"), 15);
-assert.deepEqual(firstAndLastDigits("treb7uchet"), 77);
+assert.equal(firstAndLastDigits("1abc2"), 12);
+assert.equal(firstAndLastDigits("pqr3stu8vwx"), 38);
+assert.equal(firstAndLastDigits("a1b2c3d4e5f"), 15);
+assert.equal(firstAndLastDigits("treb7uchet"), 77);
 
-assert.deepEqual(firstAndLastDigits("two1nine", true), 29);
-assert.deepEqual(firstAndLastDigits("eightwothree", true), 83);
-assert.deepEqual(firstAndLastDigits("abcone2threexyz", true), 13);
-assert.deepEqual(firstAndLastDigits("xtwone3four", true), 24);
-assert.deepEqual(firstAndLastDigits("4nineeightseven2", true), 42);
-assert.deepEqual(firstAndLastDigits("zoneight234", true), 14);
-assert.deepEqual(firstAndLastDigits("7pqrstsixteen", true), 76);
+assert.equal(firstAndLastDigits("two1nine", true), 29);
+assert.equal(firstAndLastDigits("eightwothree", true), 83);
+assert.equal(firstAndLastDigits("abcone2threexyz", true), 13);
+assert.equal(firstAndLastDigits("xtwone3four", true), 24);
+assert.equal(firstAndLastDigits("4nineeightseven2", true), 42);
+assert.equal(firstAndLastDigits("zoneight234", true), 14);
+assert.equal(firstAndLastDigits("7pqrstsixteen", true), 76);
 
 const sum = (data, includeWords) =>
   data.reduce((acc, str) => {
