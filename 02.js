@@ -1,7 +1,6 @@
 const assert = require("assert");
 
 const fs = require("fs");
-const { get } = require("http");
 
 const parseData = (file) =>
   fs
