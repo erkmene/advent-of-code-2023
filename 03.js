@@ -133,5 +133,3 @@ assert.equal(arraySum(findGearRatios(testData)), 467835);
 
 console.log("First Answer", arraySum(findPartNumbers(data)));
 console.log("Second Answer", arraySum(findGearRatios(data)));
-
-// console.log(findPartNumbers(data));
